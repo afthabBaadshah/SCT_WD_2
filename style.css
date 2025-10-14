@@ -1,0 +1,130 @@
+/* Import futuristic Orbitron font */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling with a modern gradient background */
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Orbitron", sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #111111);
+    color: #fff;
+}
+
+/* Outer container */
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #2a2a40, #1b1b2d);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Title text */
+h1 {
+    margin-top: 10px;
+    font-size: 28px;
+    color: #f3c623;
+    letter-spacing: 2px;
+}
+
+/* Calculator block */
+.calculator {
+    margin-top: 25px;
+    background: linear-gradient(145deg, #202030, #151520);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.05), 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Display section */
+.display-row {
+    width: 100%;
+    max-width: 260px;
+    font-size: 38px;
+    text-align: right;
+    background: transparent;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    margin: 5px auto;
+    border-bottom: 2px solid #7a7676;
+    outline: none;
+}
+
+/* Placeholder styling */
+.display-row::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* Common button styling */
+button {
+    background-color: #3a3a4f;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    font-size: 22px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease;
+}
+
+/* Button press animation */
+button:active {
+    transform: scale(0.92);
+    background-color: #565676;
+}
+
+/* Special operator buttons */
+.spl-btn {
+    background-color: #ff9f0a;
+    color: black;
+}
+
+.spl-btn:active {
+    background-color: #e28c04;
+}
+
+/* Row layout for button groups */
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 10px 0;
+}
+
+/* ===== Responsive Design ===== */
+
+/* For smaller screens (height < 550px) */
+@media (max-height: 550px) {
+    body {
+        transform: scale(0.9);
+    }
+}
+
+/* For small phones (width < 360px) */
+@media (max-width: 360px) {
+    .container {
+        transform: scale(0.85);
+    }
+}
+
+/* For ultra-small devices (width <= 240px) */
+@media (max-width: 240px) {
+    .container {
+        transform: scale(0.7);
+    }
+}
