@@ -27,3 +27,7 @@ A modern, responsive, and easy-to-use **web calculator** built using **HTML, CSS
 
 ---
 
+## 🖼️ Preview
+
+<img width="1160" height="856" alt="Calculator" src="https://github.com/user-attachments/assets/5309e5f8-55be-46db-93b5-5f326bc70b14" />
+
